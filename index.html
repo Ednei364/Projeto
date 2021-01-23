@@ -1,0 +1,118 @@
+<!dictype html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="Cartões.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+	<title>Fno | CONTRATOS</title>
+
+	
+
+</head>
+<body id="null">
+	<input type="checkbox" id="menu">
+	<label id="menu" for="menu">
+		<img src="img\menu1.png">
+    </label>
+
+    	
+	<nav>
+		<ul>
+			<li><a href="fno.html">FNO</a></li>
+			<li><a href="lancamento.html">Lançamento</a></li>
+			<li><a href="manutencao.html">Manutenção</a></li>
+			<li><a href="importar.html">Importar</a></li>
+			<li><a href="relatorio.html">Relatório</a></li>
+		</ul>
+    </nav>
+    <form id="contract" data-js="fnos">
+        <div>
+            <label>Instituição</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Tipo</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Linha de crédito</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Loja</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Valor Financiado</label>
+            <input type="number" data-js="finan" value="1000">
+        </div>
+        <div>
+            <label>N° de parcelas</label>
+            <input type="number" data-js="parce" value="10">
+        </div>
+        <div>
+            <label>taxa ao ano</label>
+            <input type="number">
+        </div>
+        <div>
+            <label>bonus</label>
+            <input type="number">
+        </div>
+        <div>
+            <label>taxa ao mês</label>
+            <input type="number">
+        </div>
+        <div>
+            <label>data do cred</label>
+            <input type="date">
+        </div>
+        <div>
+            <label>carencia</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>data da primeira parcela</label>
+            <input data-js="parcª" type="date">
+        </div>
+        <div>
+            <label>cobrar juros</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>prazo</label>
+            <input type="number">
+        </div>
+        <div>
+            <label>amortização</label>
+            <input type="number">
+        </div>
+        <div>
+            <label>juros</label>
+            <input type="number">
+        </div>
+        <div>
+            <button type="submit" value="Gerar contrato">gerar</button>
+        </div>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th data-js="venc">Vencimento</th>
+                <th data-js="parc">Parcela</th>
+                <th data-js="amort">Amortizando</th>
+                <th data-js="juro">Juros</th>
+                <th data-js="pres">Prestação</th>
+                <th data-js="sald">Saldo</th>
+            </tr>
+        </thead>
+        <tbody data-js="table-fno"></tbody>
+    </table>  
+
+
+
+<script src="js/dom.js"></script>
+<script src="js/Cartões.js"></script>
+
+</body>
+</html>

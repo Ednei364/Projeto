@@ -1,0 +1,78 @@
+@charset"UTF-8";
+h1#cabecalho{
+	text-align: center;
+	font-family: arial;
+	color: white;
+	text-transform: uppercase;  
+}
+*{
+	padding: 0px;
+	margin:0px;
+}
+a{
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 15px 5px;
+	color: white;
+}
+ul{
+	list-style: none;
+}
+img{
+	width: 80px;
+	}
+img#topo{
+	width: 1399px;
+	top: 990px;
+	background-color:#000;
+	height: 200px;
+}
+
+input#menu[type="checkbox"]{	
+	display: none;
+}
+body{
+	
+	background-color:#98BDB8;
+    display: flex;   
+}
+body#corpo{
+	font-family: arial;
+	background: url(fundo.jpg);
+	background-size: 145%;
+}
+
+h3{
+	font-family: arial, sans-serif;
+	width: 9000px;
+	border-bottom: blue, 50px,
+	
+	}
+
+
+ul{
+	position: absolute;
+	top: 90px; 
+	width: 100%;
+}
+nav{
+	background-color: rgba(16,16,16,.5);
+	width: 150px;
+	left: -250px;
+	height: 100%;
+	position: absolute;
+	transition: all 1s;
+}
+input#menu[type="checkbox"]:checked ~ nav{
+	transform: translateX(250px);
+}
+a:hover{
+	background-color: rgb(166, 224, 230);
+	color: black;
+}
+label#menu{
+	padding: 1px;
+	position:  absolute;	
+	z-index: 1;
+}
