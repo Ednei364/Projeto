@@ -15,7 +15,7 @@
         
         handleSubmit: function handleSubmit(e){
           console.log('teste');
-          for( var i = 1; i <= 25; i++ ){
+          for( var i = 1; i <= 2599999; i++ ){
           //  for( var i = 20, parc= 4, amort = i/parc; ; parc-- ){
           e.preventDefault();
           console.log('submit');
